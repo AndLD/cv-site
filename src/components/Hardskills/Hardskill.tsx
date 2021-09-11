@@ -1,6 +1,5 @@
 import { Grid } from '@material-ui/core'
 import { useState } from 'react'
-import { Zoom } from 'react-awesome-reveal'
 import Icon from '../Icon'
 import ExpYears from './ExpYears'
 
@@ -15,7 +14,7 @@ export default function Hardskill({
     expYearsFirst?: boolean
     icons: any[]
 }) {
-    const [expYearsComponent] = useState(expYears ? <ExpYears /> : null)
+    const [expYearsComponent] = useState(expYears ? <ExpYears expYears={expYears} /> : null)
     const [iconComponents] = useState(icons.map((icon) => <Icon key={`icon-${icon}`} tech={icon} />))
 
     return (
