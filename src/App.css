@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(-150deg, rgba(0, 2, 43, 1) 0%, rgba(33, 33, 33, 1) 100%) fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 200;
+    color: rgb(228, 228, 196);
+}
+
+.Header,
+.Hardskill {
+    height: 30vh;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+}
+
+.subtitle {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+}
+
+.Point {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+
+.red:hover {
+    background-color: darkred;
+}
+.yellow:hover {
+    background-color: rgb(216, 216, 0);
+}
+.green:hover {
+    background-color: darkgreen;
+}
