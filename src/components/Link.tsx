@@ -1,5 +1,7 @@
 import Icon from './Icon'
 
+import { isMobile } from 'react-device-detect'
+
 export default function Link({ link, icon, text }: { link: string; icon: string; text: string }) {
     return (
         <div
@@ -15,7 +17,7 @@ export default function Link({ link, icon, text }: { link: string; icon: string;
                 style={{
                     margin: 'auto',
                     marginTop: '5vh',
-                    width: '50%',
+                    width: isMobile ? '85%' : '50%',
                     fontSize: '150%'
                 }}
             >

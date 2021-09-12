@@ -10,24 +10,32 @@ import Link from './components/Link'
 import Footer from './components/Footer'
 import { Fade } from 'react-awesome-reveal'
 
+import { isMobile } from 'react-device-detect'
+
 function App() {
     const [typedStyleColor, setTypedStyleColor] = useState('orange')
     const [jsStyleBackground, setJsStyleBackground] = useState('transparent')
 
     return (
         <Container className="App" maxWidth="lg">
-            <Fade triggerOnce={true} fraction={0.6} duration={1500}>
+            <Fade triggerOnce={true} fraction={isMobile ? 0.3 : 0.6} duration={1500}>
                 <Header
                     typedStyleColorState={[typedStyleColor, setTypedStyleColor]}
                     jsStyleBackgroundState={[jsStyleBackground, setJsStyleBackground]}
                 />
 
-                <Terminal text="Здравствуйте. Меня зову Андрей. Мне 20 лет. Я являюсь Full Stack JS Developer. 4 года в веб-разработке. Далее представляю вам стек, на котором пишу приложения." />
+                <div
+                    style={{
+                        marginTop: isMobile ? '50vh' : 0
+                    }}
+                >
+                    <Terminal text="Здравствуйте. Меня зовут Андрей. Мне 20 лет. Я являюсь Full Stack JS Developer. 4 года в веб-разработке. Далее представляю вам стек, на котором пишу приложения." />
+                </div>
             </Fade>
 
             <Hardskills />
 
-            <Fade triggerOnce={true} fraction={0.6} duration={1500}>
+            <Fade triggerOnce={true} fraction={isMobile ? 0.3 : 0.6} duration={1500}>
                 <Terminal text="Так же я придерживаюсь концепций SOLID, DRY, KISS, TDD. Использую REST API, MVC и микросервисную архитектуру для Back End части." />
 
                 <Link

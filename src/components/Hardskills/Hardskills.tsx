@@ -2,9 +2,11 @@ import { Fade } from 'react-awesome-reveal'
 import Subtitle from '../Subtitle'
 import Hardskill from './Hardskill'
 
+import { isMobile } from 'react-device-detect'
+
 export default function Hardskills() {
     return (
-        <Fade triggerOnce={true} fraction={0.6} duration={1500}>
+        <Fade triggerOnce={true} fraction={isMobile ? 0.3 : 0.6} duration={1500}>
             <Subtitle text="Стэк технологий" />
 
             <Hardskill

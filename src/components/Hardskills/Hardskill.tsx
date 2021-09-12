@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Icon from '../Icon'
 import ExpYears from './ExpYears'
 
+import { isMobile } from 'react-device-detect'
+
 export default function Hardskill({
     text,
     expYears,
@@ -19,19 +21,26 @@ export default function Hardskill({
 
     return (
         <div style={style.hardskill} className="Hardskill">
-            <Grid
-                style={{
-                    height: '30vh'
-                }}
-                container
-                direction="row"
-                justifyContent="space-evenly"
-                alignItems="center"
-            >
-                {expYearsFirst ? expYearsComponent : null}
-                {iconComponents}
-                {expYearsFirst ? null : expYearsComponent ? expYearsComponent : null}
-            </Grid>
+            {!isMobile ? (
+                <Grid
+                    style={{
+                        height: '30vh'
+                    }}
+                    container
+                    direction="row"
+                    justifyContent="space-evenly"
+                    alignItems="center"
+                >
+                    {expYearsFirst ? expYearsComponent : null}
+                    {iconComponents}
+                    {expYearsFirst ? null : expYearsComponent ? expYearsComponent : null}
+                </Grid>
+            ) : (
+                <div>
+                    <div style={{ textAlign: 'center' }}>{iconComponents}</div>
+                    <div>{expYearsComponent}</div>
+                </div>
+            )}
             <div
                 style={{
                     textAlign: 'center',
@@ -46,7 +55,7 @@ export default function Hardskill({
 
 const style = {
     hardskill: {
-        height: '30vh',
+        height: isMobile ? '70vh' : '30vh',
         marginTop: '30vh',
         marginBottom: '30vh'
     }
