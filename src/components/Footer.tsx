@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 export default function Footer() {
+    const { t } = useTranslation()
+
     return (
         <div
             style={{
@@ -6,7 +10,7 @@ export default function Footer() {
                 textAlign: 'center'
             }}
         >
-            © 2021 . Андрей Ларионов .
+            © 2021 . {t('Author')} .
         </div>
     )
 }

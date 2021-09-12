@@ -1,12 +1,15 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import Typed from 'react-typed'
 
 import { isMobile } from 'react-device-detect'
 
-export default function MainTitle(props: any) {
-    const [typedStyleColor, setTypedStyleColor] = props.typedStyleColorState
-    const [jsStyleBackground, setJsStyleBackground] = props.jsStyleBackgroundState
+export default function MainTitle() {
+    const { t } = useTranslation()
+
+    const [typedStyleColor, setTypedStyleColor] = useState('orange')
+    const [jsStyleBackground, setJsStyleBackground] = useState('transparent')
     const [emodzyOpacity, setEmodzyOpacity] = useState(0)
 
     const stringTypedHandler = (arrayPos: number) => {
@@ -32,50 +35,7 @@ export default function MainTitle(props: any) {
         }
     }
 
-    return isMobile ? (
-        <div>
-            <h1 className="PositionTitle" style={style.positionTitle}>
-                <Typed
-                    className="DynamicString"
-                    style={{
-                        color: typedStyleColor,
-                        ...style.dynamicString
-                    }}
-                    backDelay={0}
-                    onStringTyped={stringTypedHandler}
-                    strings={['Front End', 'Back End', 'Full Stack']}
-                    typeSpeed={130}
-                    backSpeed={50}
-                    loop
-                />
-                <div className="StaticString" style={style.staticString}>
-                    <span
-                        className="js"
-                        style={{
-                            background: jsStyleBackground,
-                            ...style.js
-                        }}
-                    >
-                        JS
-                    </span>
-                    <span>Developer</span>
-                    <span
-                        className="emodzy"
-                        style={{
-                            ...style.emodzy,
-                            opacity: emodzyOpacity
-                        }}
-                    >
-                        😎
-                    </span>
-                </div>
-            </h1>
-
-            <h2 className="Author" style={style.author as any}>
-                Андрей Ларионов
-            </h2>
-        </div>
-    ) : (
+    return (
         <span>
             <h1 className="PositionTitle" style={style.positionTitle}>
                 <Typed
@@ -115,7 +75,7 @@ export default function MainTitle(props: any) {
             </h1>
 
             <h2 className="Author" style={style.author as any}>
-                Андрей Ларионов
+                {t('Author')}
             </h2>
         </span>
     )

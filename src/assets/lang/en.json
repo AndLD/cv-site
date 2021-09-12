@@ -1,0 +1,18 @@
+{
+    "translation": {
+        "Author": "Andrey Larionov",
+        "Terminal1": "Hello. My name is Andrey. I am 20 years old. I am Full Stack JS Developer. I do web development 4 years. Go down and see my tech stack, which I use to build apps.",
+        "TechesStack": "Tech stack",
+        "year1": "year",
+        "year2": "years",
+        "year3": "years",
+        "exp": "exp.",
+        "jest": "Unit-testing: Jest",
+        "typescript": "TypeScript on Front End and Back End",
+        "db": "Data bases MySQL, Mongo DB",
+        "redis": "I use Redis to cache data on server",
+        "Terminal2": "Also I follow SOLID, DRY, KISS and TDD concepts. I use REST API, MVC and microservices architecture for Back End part.",
+        "GitHub": "This is a link to my GitHub. There you can get familiar with projects I have done. If necessary I am ready to do a test task.",
+        "Contacts": "Contacts"
+    }
+}
