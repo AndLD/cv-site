@@ -1,13 +1,16 @@
 import { Fade } from 'react-awesome-reveal'
+import { useTranslation } from 'react-i18next'
+import { isMobile } from 'react-device-detect'
+
 import Subtitle from '../Subtitle'
 import Hardskill from './Hardskill'
 
-import { isMobile } from 'react-device-detect'
-
 export default function Hardskills() {
+    const { t } = useTranslation()
+
     return (
         <Fade triggerOnce={true} fraction={isMobile ? 0.3 : 0.6} duration={1500}>
-            <Subtitle text="Стэк технологий" />
+            <Subtitle text={t('TechesStack')} />
 
             <Hardskill
                 key={'hardskill1'}
@@ -23,13 +26,7 @@ export default function Hardskills() {
                 expYearsFirst={true}
                 icons={['react', 'redux']}
             />
-            <Hardskill
-                key={'hardskill3'}
-                text={'Unit-тестирование: Jest'}
-                expYears={0.5}
-                expYearsFirst={true}
-                icons={['jest']}
-            />
+            <Hardskill key={'hardskill3'} text={t('jest')} expYears={0.5} expYearsFirst={true} icons={['jest']} />
             <Hardskill
                 key={'hardskill4'}
                 text={'Node.js + Express'}
@@ -39,25 +36,19 @@ export default function Hardskills() {
             />
             <Hardskill
                 key={'hardskill5'}
-                text={'TypeScript на Front End и Back End'}
+                text={t('typescript')}
                 expYears={2}
                 expYearsFirst={true}
                 icons={['typescript']}
             />
             <Hardskill
                 key={'hardskill6'}
-                text={'Базы данных MySQL, Mongo DB'}
+                text={t('db')}
                 expYears={3}
                 expYearsFirst={false}
                 icons={['mysql', 'mongodb']}
             />
-            <Hardskill
-                key={'hardskill7'}
-                text={'Использую Redis для кеширования данных на сервере'}
-                expYears={1}
-                expYearsFirst={true}
-                icons={['redis']}
-            />
+            <Hardskill key={'hardskill7'} text={t('redis')} expYears={1} expYearsFirst={true} icons={['redis']} />
             <Hardskill
                 key={'hardskill8'}
                 text={'Google Docs API, Google Drive API, Firebase'}

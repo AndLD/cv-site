@@ -2,12 +2,11 @@ import Typed from 'react-typed'
 
 export default function TerminalContent({ text }: { text: string }) {
     return (
-        <div className="TerminalContent" style={style.terminalContent}>
+        <div className="TerminalContent" style={style.terminalContent as any}>
             <p>
-                <i>
-                    <span>$ </span>
-                </i>
-                <Typed startDelay={3000} strings={[text]} typeSpeed={30} backSpeed={50}></Typed>
+                <span>
+                    <i>$</i> {text}
+                </span>
             </p>
         </div>
     )
@@ -15,8 +14,10 @@ export default function TerminalContent({ text }: { text: string }) {
 
 const style = {
     terminalContent: {
+        textAlign: 'justify',
         fontSize: '150%',
         paddingLeft: 20,
+        paddingRight: 20,
         color: 'white'
     }
 }

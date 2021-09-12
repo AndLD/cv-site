@@ -1,11 +1,15 @@
+import { useTranslation } from 'react-i18next'
+
 import Subtitle from './Subtitle'
 import EmailIcon from '@material-ui/icons/Email'
 import TelegramIcon from '@material-ui/icons/Telegram'
 
 export default function Contacts() {
+    const { t } = useTranslation()
+
     return (
         <div>
-            <Subtitle text="Контакты" />
+            <Subtitle text={t('Contacts')} />
             <div
                 style={{
                     marginBottom: 200,
