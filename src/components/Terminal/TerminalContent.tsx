@@ -1,5 +1,3 @@
-import Typed from 'react-typed'
-
 export default function TerminalContent({ text }: { text: string }) {
     return (
         <div className="TerminalContent" style={style.terminalContent as any}>
