@@ -29,6 +29,8 @@ import googleDriveApiIcon from '../assets/icons/google/google_drive_48px.svg'
 // Other
 import projectsIcon from '../assets/icons/rocket.svg'
 
+import { isMobile } from 'react-device-detect'
+
 export default function Icon({ tech }: { tech: string }) {
     const [src, setSrc] = useState('')
 
@@ -116,5 +118,5 @@ export default function Icon({ tech }: { tech: string }) {
 }
 
 const style = {
-    width: '10%'
+    width: isMobile ? '30%' : '10%'
 }
