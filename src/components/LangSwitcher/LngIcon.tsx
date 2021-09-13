@@ -27,7 +27,7 @@ export default function LngIcon({ iconLng, lngState }: { iconLng: string; lngSta
 
 const style = {
     lng: {
-        // width: '5%'
+        cursor: 'pointer',
         width: isMobile ? 30 : 50
     }
 }
