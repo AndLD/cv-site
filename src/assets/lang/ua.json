@@ -1,18 +1,38 @@
 {
-    "translation": {
-        "Author": "Андрій Ларіонов",
-        "Terminal1": "Вітаю. Мене звуть Андрій. Мені 20 років. Я є Full Stack JS Developer. 4 роки у веб-розробці. Далі представляю вам стек, на котрому пишу додатки.",
-        "TechesStack": "Стек технологій",
-        "year1": "рік",
-        "year2": "роки",
-        "year3": "років",
-        "exp": "досвіду",
-        "jest": "Unit-тестування: Jest",
-        "typescript": "TypeScript на Front End та Back End",
-        "db": "Бази даних MySQL, Mongo DB",
-        "redis": "Використовую Redis для кешування даних на сервері",
-        "Terminal2": "Також я дотримуюсь концепцій SOLID, DRY, KISS, TDD. Використовую REST API, MVC та мікросервісну архітектуру для Back End частини.",
-        "GitHub": "Це посилання на мій GitHub. Там Ви можете ознайомитись з проектами, які я виконував. При необхідності готовий виконати тестове завдання.",
-        "Contacts": "Контакти"
+    "common": {
+        "translation": {
+            "Author": "Андрій Ларіонов",
+            "Terminal1": "Вітаю. Мене звуть Андрій. Мені 20 років. Я є Full Stack JS Developer. 4 роки у веб-розробці. Далі представляю вам стек, на котрому пишу додатки.",
+            "TechesStack": "Стек технологій",
+            "year1": "рік",
+            "year2": "роки",
+            "year3": "років",
+            "exp": "досвіду",
+            "jest": "Unit-тестування: Jest",
+            "typescript": "TypeScript на Front End та Back End",
+            "db": "Бази даних MySQL, Mongo DB",
+            "redis": "Використовую Redis для кешування даних на сервері",
+            "Terminal2": "Також я дотримуюсь концепцій SOLID, DRY, KISS, TDD. Використовую REST API, MVC та мікросервісну архітектуру для Back End частини.",
+            "GitHub": "Це посилання на мій GitHub. Там Ви можете ознайомитись з проектами, які я виконував. При необхідності готовий виконати тестове завдання.",
+            "Contacts": "Контакти",
+            "response10minutes": "Відповідь ~10 хвилин",
+            "response3minutes": "Відповідь ~3 хвилини"
+        }
+    },
+    "commercial-experience": {
+        "translation": {
+            "commercialExp": "Комерційний досвід",
+            "partTime": "Часткова зайнятість",
+            "fullTime": "Повна зайнятість",
+
+            "jobPlace1Description": "Участь у командній розробці Back End для криптовалютної біржи. Будування REST API для CRUD сутностей системи. Написання функцій-контролерів, функцій-сервісів та функцій-моделей",
+            "jobPlace1Term": "6 місяців",
+
+            "jobPlace2Description": "Участь у розробці CRM-системи. Авторизація через Google OAuth2.0 за допомогую бібліотеки Passport.js. Будування REST API, який реалізує CRUD сутностей CRM. Написання REST API для створення Google Doc на Google диску, використувуючи Google Drive API. Написання функцій в Google Apps Script для злиття декількох Google Doc в один і добавлення таблиці у кінець вказанного Google Doc. Docker Compose трьох сервісів: Front End (Vue), Back End (Node.js), DB (MySQL)",
+            "jobPlace2Term": "5 місяців",
+
+            "jobPlace3Description": "Розробка нового сайту коледжу (SSR: JS, Node.js+Express, ejs), його адміністрування та підтримка. Адаптивна верстка. Авторизація через сессії, використовуючи библиотеку Passport.js. Авторизація 2FA через телеграм-бота (бібліотека Telegraf). Розробка третього сайту коледжу (TDD, Jest, TypeScript, React+Redux, Node.js+Express, MySQL, Google OAuth2.0, Google Drive API) з урахуванням помилок, допущених при розробці попереднього. Docker Compose трьох сервісів: Front End (React), Back End (Node.js), DB (MySQL). Адміністрування та підтримка",
+            "jobPlace3Term": "1 рік"
+        }
     }
 }
