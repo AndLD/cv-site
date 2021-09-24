@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cv-site/static/css/main.eb17c28a.chunk.css",
-    "main.js": "/cv-site/static/js/main.41e134c2.chunk.js",
-    "main.js.map": "/cv-site/static/js/main.41e134c2.chunk.js.map",
+    "main.js": "/cv-site/static/js/main.8e8f9a31.chunk.js",
+    "main.js.map": "/cv-site/static/js/main.8e8f9a31.chunk.js.map",
     "runtime-main.js": "/cv-site/static/js/runtime-main.01e5f293.js",
     "runtime-main.js.map": "/cv-site/static/js/runtime-main.01e5f293.js.map",
     "static/js/2.c2e8a603.chunk.js": "/cv-site/static/js/2.c2e8a603.chunk.js",
@@ -18,7 +18,7 @@
     "static/media/css3_48px.949d72f1.svg": "/cv-site/static/media/css3_48px.949d72f1.svg",
     "static/media/docker_48px.58f66d4c.svg": "/cv-site/static/media/docker_48px.58f66d4c.svg",
     "static/media/english.f65af1d9.svg": "/cv-site/static/media/english.f65af1d9.svg",
-    "static/media/express.375eee76.png": "/cv-site/static/media/express.375eee76.png",
+    "static/media/express.f18849ca.svg": "/cv-site/static/media/express.f18849ca.svg",
     "static/media/firebase_48px.6ca5c7a0.svg": "/cv-site/static/media/firebase_48px.6ca5c7a0.svg",
     "static/media/git_48px.60361513.svg": "/cv-site/static/media/git_48px.60361513.svg",
     "static/media/github_48px.20e6b173.svg": "/cv-site/static/media/github_48px.20e6b173.svg",
@@ -52,6 +52,6 @@
     "static/js/runtime-main.01e5f293.js",
     "static/js/2.c2e8a603.chunk.js",
     "static/css/main.eb17c28a.chunk.css",
-    "static/js/main.41e134c2.chunk.js"
+    "static/js/main.8e8f9a31.chunk.js"
   ]
 }
