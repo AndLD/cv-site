@@ -9,7 +9,7 @@ import reactIcon from '../assets/icons/react_48px.svg'
 import reduxIcon from '../assets/icons/redux_48px.svg'
 import jestIcon from '../assets/icons/jest.svg'
 import typescriptIcon from '../assets/icons/typescript_48px.svg'
-import expressIcon from '../assets/icons/express.png'
+import expressIcon from '../assets/icons/express.svg'
 
 import dockerIcon from '../assets/icons/docker_48px.svg'
 

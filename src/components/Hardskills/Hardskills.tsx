@@ -15,14 +15,14 @@ export default function Hardskills() {
             <Hardskill
                 key={'hardskill1'}
                 text={'JavaScript, HTML, CSS'}
-                expYears={4}
+                expYears={3}
                 expYearsFirst={false}
                 icons={['javascript', 'html', 'css']}
             />
             <Hardskill
                 key={'hardskill2'}
                 text={'React, Redux'}
-                expYears={2}
+                expYears={1}
                 expYearsFirst={true}
                 icons={['react', 'redux']}
             />
@@ -30,30 +30,30 @@ export default function Hardskills() {
             <Hardskill
                 key={'hardskill4'}
                 text={'Node.js + Express'}
-                expYears={3}
+                expYears={2}
                 expYearsFirst={false}
                 icons={['nodejs', 'express']}
             />
             <Hardskill
                 key={'hardskill5'}
                 text={t('typescript')}
-                expYears={2}
+                expYears={0.5}
                 expYearsFirst={true}
                 icons={['typescript']}
             />
             <Hardskill
                 key={'hardskill6'}
                 text={t('db')}
-                expYears={3}
+                expYears={2}
                 expYearsFirst={false}
                 icons={['mysql', 'mongodb']}
             />
-            <Hardskill key={'hardskill7'} text={t('redis')} expYears={1} expYearsFirst={true} icons={['redis']} />
-            <Hardskill key={'hardskill8'} text={'Docker'} expYears={1} expYearsFirst={true} icons={['docker']} />
+            {/* <Hardskill key={'hardskill7'} text={t('redis')} expYears={1} expYearsFirst={true} icons={['redis']} /> */}
+            <Hardskill key={'hardskill8'} text={'Docker'} expYears={0.5} expYearsFirst={true} icons={['docker']} />
             <Hardskill
                 key={'hardskill9'}
                 text={'Google OAuth2.0, Google Docs API, Google Drive API, Google Apps Script, Firebase'}
-                expYears={1}
+                expYears={0.5}
                 expYearsFirst={false}
                 icons={['google', 'google-doc-api', 'google-drive-api', 'google-apps-script', 'firebase']}
             />

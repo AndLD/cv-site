@@ -63,21 +63,8 @@ export default function JobPlaces() {
             position: 'Web Developer',
             format: 'fullTime',
             stack: {
-                icons: [
-                    'javascript',
-                    'html',
-                    'css',
-                    'react',
-                    'redux',
-                    'typescript',
-                    'nodejs',
-                    'express',
-                    'mysql',
-                    'docker',
-                    'google',
-                    'google-drive-api'
-                ],
-                text: 'JS, HTML, CSS, React+Redux, TypeScript, Node.js+Express, MySQL, Docker, TDD, REST API, MVC, Google OAuth2.0, Google Drive API'
+                icons: ['javascript', 'html', 'css', 'nodejs', 'express', 'mysql'],
+                text: 'JS, HTML, CSS, Node.js+Express, MySQL, SSR, MVC'
             },
             description: 'jobPlace3Description',
             term: 'jobPlace3Term'

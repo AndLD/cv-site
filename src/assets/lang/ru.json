@@ -2,7 +2,7 @@
     "common": {
         "translation": {
             "Author": "Андрей Ларионов",
-            "Terminal1": "Здравствуйте. Меня зовут Андрей. Мне 20 лет. Я являюсь Full Stack JS Developer. 4 года в веб-разработке. Далее представляю вам стек, на котором пишу приложения.",
+            "Terminal1": "Здравствуйте. Меня зовут Андрей. Мне 20 лет. Я являюсь Full Stack JS Developer. 3 года в веб-разработке включая 1.5 года коммерческого опыта. Далее представляю вам стек, на котором пишу приложения.",
             "TechesStack": "Стек технологий",
             "year1": "год",
             "year2": "года",
@@ -12,11 +12,9 @@
             "typescript": "TypeScript на Front End и Back End",
             "db": "Базы данных MySQL, Mongo DB",
             "redis": "Использую Redis для кеширования данных на сервере",
-            "Terminal2": "Так же я придерживаюсь концепций SOLID, DRY, KISS, TDD. Использую REST API, MVC и микросервисную архитектуру для Back End части.",
+            "Terminal2": "Я использую REST API, MVC для Back End части.",
             "GitHub": "Это ссылка на мой GitHub. Здесь Вы можете ознакомиться с проектами, которые я выполнял. При необходимости готов выполнить тестовое задание.",
-            "Contacts": "Контакты",
-            "response10minutes": "Ответ ~10 минут",
-            "response3minutes": "Ответ ~3 минуты"
+            "Contacts": "Контакты"
         }
     },
     "commercial-experience": {
@@ -29,10 +27,10 @@
             "jobPlace1Term": "6 месяцев",
 
             "jobPlace2Description": "Участие в разработке CRM-системы. Авторизация через Google OAuth2.0 с помощью библиотеки Passport.js. REST API, реализовывающий CRUD сущностей CRM. Написание REST API для создания Google Doc на Google диске с использованием Google Drive API. Написание функций в Google Apps Script для слияния нескольких Google Doc в один и добавления таблицы в конец указанного Google Doc. Docker Compose трех сервисов: Front End (Vue), Back End (Node.js), DB (MySQL)",
-            "jobPlace2Term": "5 месяцев",
+            "jobPlace2Term": "2 месяца",
 
-            "jobPlace3Description": "Разработка нового сайта колледжа (SSR: JS, Node.js+Express, ejs), его администрирование и поддержка. Адаптивная верстка. Авторизация через сессии с использованием библиотеки Passport.js. Авторизация 2FA через телеграмм-бота (библиотека Telegraf). Разработка третьего сайта колледжа (TDD, Jest, TypeScript, React+Redux, Node.js+Express, MySQL, Google OAuth2.0, Google Drive API) с учетом ошибок, допущенных при разработке предыдущего. Docker Compose трех сервисов: Front End (React), Back End (Node.js), DB (MySQL). Администрирование и поддержка",
-            "jobPlace3Term": "1 год"
+            "jobPlace3Description": "Разработка нового сайта колледжа (SSR: JS, Node.js+Express, ejs), его администрирование и поддержка. Адаптивная верстка. Авторизация через сессии с использованием библиотеки Passport.js. Авторизация 2FA через телеграмм-бота (библиотека Telegraf)",
+            "jobPlace3Term": "5 месяцев"
         }
     }
 }

@@ -19,7 +19,6 @@ export default function Contacts() {
             >
                 <div>
                     <EmailIcon style={{ fontSize: 50 }} color="error" />
-                    <p style={{ color: 'rgb(177, 177, 138)' }}>{t('response10minutes')}</p>
                     <h2>
                         <a
                             style={{
@@ -34,7 +33,6 @@ export default function Contacts() {
                 </div>
                 <div>
                     <TelegramIcon style={{ fontSize: 50 }} color="primary" />
-                    <p style={{ color: 'rgb(177, 177, 138)' }}>{t('response3minutes')}</p>
                     <h2>
                         <a
                             style={{

@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react'
-
 import { Container } from '@material-ui/core'
 import { Fade } from 'react-awesome-reveal'
 import { isMobile } from 'react-device-detect'
@@ -20,6 +18,7 @@ import JobPlaces from './components/JobPlaces/JobPlaces'
 import enJson from './assets/lang/en.json'
 import ruJson from './assets/lang/ru.json'
 import uaJson from './assets/lang/ua.json'
+import { useEffect, useState } from 'react'
 
 // TODO: Refactoring
 function getFromJson(json: any) {
@@ -62,8 +61,7 @@ function App() {
     const [lng, setLng] = useState(window.localStorage.getItem('lng') || 'ru')
 
     useEffect(() => {
-        const currentLng: string | null = window.localStorage.getItem('lng')
-        if (currentLng) i18n.changeLanguage(currentLng)
+        i18n.changeLanguage(lng)
     }, [])
 
     useEffect(() => {
@@ -73,7 +71,7 @@ function App() {
 
     return (
         <div>
-            <LangSwitcher lng={lng} setLng={setLng} />
+            <LangSwitcher lngState={[lng, setLng]} />
             <Container className="App" maxWidth="lg">
                 <Fade triggerOnce={true} fraction={isMobile ? 0.3 : 0.6} duration={1500}>
                     <Header />

@@ -19,6 +19,7 @@ const style = {
         backgroundColor: 'rgb(20, 20, 20)',
         height: isMobile ? '60vh' : '30vh',
         borderRadius: 15,
+        paddingBottom: 20,
         fontFamily: 'consolas',
         boxShadow: '0px 0px 10px 10px black'
     }
