@@ -1,0 +1,36 @@
+{
+    "common": {
+        "translation": {
+            "Author": "Andrey Larionov",
+            "Terminal1": "Hello. My name is Andrey. I am 20 years old. I am Full Stack JS Developer. I do web development 3 years including 1.5 years of commercial experience. Go down and see my tech stack, which I use to build apps.",
+            "TechesStack": "Development stack",
+            "year1": "year",
+            "year2": "years",
+            "year3": "years",
+            "exp": "exp.",
+            "jest": "Unit-testing: Jest",
+            "typescript": "TypeScript on Front End and Back End",
+            "db": "Data bases MySQL, Mongo DB",
+            "redis": "I use Redis to cache data on server",
+            "Terminal2": "I use REST API, MVC for Back End part.",
+            "GitHub": "This is a link to my GitHub. There you can get familiar with projects I have done. If necessary I am ready to do a test task.",
+            "Contacts": "Contacts"
+        }
+    },
+    "commercial-experience": {
+        "translation": {
+            "commercialExp": "Commercial experience",
+            "partTime": "part-time",
+            "fullTime": "full-time",
+
+            "jobPlace1Description": "Participated in team development of Back End of crypto exchange. Building REST API for managing system entities. Writing controllers functions, services functions and models functions",
+            "jobPlace1Term": "6 months",
+
+            "jobPlace2Description": "I participated in CRM development. Authorization via Google OAuth2.0 using Passport.js library. Building REST API which perform CRUD of CRM entities. Writing REST API for Google Doc creating on Google Drive using Google Drive API. Writing functions in Google Apps Script to merge few Google Docs into one and table adding to end of specified Google Doc. Docker Compose build three services: Front End (Vue), Back End (Node.js), DB (MySQL)",
+            "jobPlace2Term": "2 months",
+
+            "jobPlace3Description": "Development of new college site (SSR: JS, Node.js+Express, ejs), admimistration and support. Adaptive layout. Authorization via sessions using Passport.js library. 2FA-authorization via telegram bot (Telegraf library).",
+            "jobPlace3Term": "5 months"
+        }
+    }
+}

@@ -11,6 +11,8 @@ import jestIcon from '../assets/icons/jest.svg'
 import typescriptIcon from '../assets/icons/typescript_48px.svg'
 import expressIcon from '../assets/icons/express.svg'
 
+import dockerIcon from '../assets/icons/docker_48px.svg'
+
 import mysqlIcon from '../assets/icons/mysql_logo_48px.svg'
 import mongodbIcon from '../assets/icons/mongodb_48px.svg'
 import redisIcon from '../assets/icons/redis_48px.svg'
@@ -25,11 +27,32 @@ import githubIcon from '../assets/icons/github_48px.svg'
 import googleIcon from '../assets/icons/google/google_48px.svg'
 import googleDocApiIcon from '../assets/icons/google/google_docs_48px.svg'
 import googleDriveApiIcon from '../assets/icons/google/google_drive_48px.svg'
+import googleAppsScriptIcon from '../assets/icons/google/google-apps-script.svg'
+
+// teches used in past
+import golangIcon from '../assets/icons/golang.svg'
+import vueIcon from '../assets/icons/vue.svg'
+import vuexIcon from '../assets/icons/vuex.png'
+import vuetifyIcon from '../assets/icons/vuetify.png'
+import materialUiIcon from '../assets/icons/material-ui.png'
+
+import bootstrapIcon from '../assets/icons/bootstrap.svg'
 
 // Other
 import projectsIcon from '../assets/icons/rocket.svg'
 
-export default function Icon({ tech }: { tech: string }) {
+import { isMobile } from 'react-device-detect'
+
+export default function Icon({
+    tech,
+    width
+}: {
+    tech: string
+    width?: {
+        mobile?: string
+        desktop: string
+    }
+}) {
     const [src, setSrc] = useState('')
 
     useEffect(() => {
@@ -64,6 +87,10 @@ export default function Icon({ tech }: { tech: string }) {
 
             case 'typescript':
                 setSrc(typescriptIcon)
+                break
+
+            case 'docker':
+                setSrc(dockerIcon)
                 break
 
             case 'mysql':
@@ -104,6 +131,30 @@ export default function Icon({ tech }: { tech: string }) {
             case 'google-drive-api':
                 setSrc(googleDriveApiIcon)
                 break
+            case 'google-apps-script':
+                setSrc(googleAppsScriptIcon)
+                break
+
+            // teches used in past
+            case 'golang':
+                setSrc(golangIcon)
+                break
+            case 'vue':
+                setSrc(vueIcon)
+                break
+            case 'vuex':
+                setSrc(vuexIcon)
+                break
+            case 'vuetify':
+                setSrc(vuetifyIcon)
+                break
+            case 'material-ui':
+                setSrc(materialUiIcon)
+                break
+
+            case 'bootstrap':
+                setSrc(bootstrapIcon)
+                break
 
             // other
             case 'projects':
@@ -112,9 +163,19 @@ export default function Icon({ tech }: { tech: string }) {
         }
     }, [])
 
-    return <img style={style} src={src} alt={tech} />
-}
-
-const style = {
-    width: '10%'
+    return (
+        <img
+            style={{
+                width: isMobile
+                    ? width
+                        ? width.mobile || width.desktop || '30%'
+                        : '30%'
+                    : width
+                    ? width.desktop || '10%'
+                    : '10%'
+            }}
+            src={src}
+            alt={tech}
+        />
+    )
 }

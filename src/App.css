@@ -4,6 +4,9 @@ body {
     padding: 0;
     font-family: 'Roboto';
     font-weight: 200;
+    /* Sub color */
+    /* color: rgb(177, 177, 138); */
+    /* Main color */
     color: rgb(228, 228, 196);
 }
 

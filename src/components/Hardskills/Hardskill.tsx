@@ -1,8 +1,9 @@
 import { Grid } from '@material-ui/core'
 import { useState } from 'react'
-import { Zoom } from 'react-awesome-reveal'
 import Icon from '../Icon'
 import ExpYears from './ExpYears'
+
+import { isMobile } from 'react-device-detect'
 
 export default function Hardskill({
     text,
@@ -15,24 +16,31 @@ export default function Hardskill({
     expYearsFirst?: boolean
     icons: any[]
 }) {
-    const [expYearsComponent] = useState(expYears ? <ExpYears /> : null)
+    const [expYearsComponent] = useState(expYears ? <ExpYears expYears={expYears} /> : null)
     const [iconComponents] = useState(icons.map((icon) => <Icon key={`icon-${icon}`} tech={icon} />))
 
     return (
         <div style={style.hardskill} className="Hardskill">
-            <Grid
-                style={{
-                    height: '30vh'
-                }}
-                container
-                direction="row"
-                justifyContent="space-evenly"
-                alignItems="center"
-            >
-                {expYearsFirst ? expYearsComponent : null}
-                {iconComponents}
-                {expYearsFirst ? null : expYearsComponent ? expYearsComponent : null}
-            </Grid>
+            {!isMobile ? (
+                <Grid
+                    style={{
+                        height: '30vh'
+                    }}
+                    container
+                    direction="row"
+                    justifyContent="space-evenly"
+                    alignItems="center"
+                >
+                    {expYearsFirst ? expYearsComponent : null}
+                    {iconComponents}
+                    {expYearsFirst ? null : expYearsComponent ? expYearsComponent : null}
+                </Grid>
+            ) : (
+                <div>
+                    <div style={{ textAlign: 'center' }}>{iconComponents}</div>
+                    <div>{expYearsComponent}</div>
+                </div>
+            )}
             <div
                 style={{
                     textAlign: 'center',
@@ -47,7 +55,7 @@ export default function Hardskill({
 
 const style = {
     hardskill: {
-        height: '30vh',
+        height: isMobile ? '70vh' : '30vh',
         marginTop: '30vh',
         marginBottom: '30vh'
     }

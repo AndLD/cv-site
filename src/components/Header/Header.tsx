@@ -1,27 +1,43 @@
-import { createElement } from 'react'
 import { Grid } from '@material-ui/core'
+import { Fade } from 'react-awesome-reveal'
+import { isMobile } from 'react-device-detect'
 
 import avatar from '../../assets/images/andrey.larionov.me.jpg'
 import Avatar from './Avatar'
 import MainTitle from './MainTitle'
 
-export default function Header(props: any) {
+export default function Header() {
     return (
         <div style={style.header} className="Header">
-            <Grid container direction="row" alignItems="center" justifyContent="space-between">
-                {createElement(MainTitle, props)}
+            {!isMobile ? (
+                <Grid container direction="row" alignItems="center" justifyContent="space-between">
+                    <MainTitle />
 
-                <Avatar avatar={avatar} />
-            </Grid>
+                    <Avatar avatar={avatar} />
+                </Grid>
+            ) : (
+                <div>
+                    <MainTitle />
+                    <Fade triggerOnce={true} fraction={0.6} duration={1500}>
+                        <div className="AvatarWrapper" style={style.avatarWrapper as any}>
+                            <Avatar avatar={avatar} />
+                        </div>
+                    </Fade>
+                </div>
+            )}
         </div>
     )
 }
 
 const style = {
     header: {
-        marginLeft: 80,
+        marginLeft: isMobile ? 20 : 80,
         height: '30vh',
-        marginTop: '30vh',
+        marginTop: isMobile ? '15vh' : '30vh',
         marginBottom: '30vh'
+    },
+    avatarWrapper: {
+        textAlign: isMobile ? 'center' : undefined,
+        marginTop: isMobile ? 50 : 0
     }
 }

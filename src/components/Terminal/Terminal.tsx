@@ -1,6 +1,8 @@
 import TerminalContent from './TerminalContent'
 import TerminalHeader from './TerminalHeader'
 
+import { isMobile } from 'react-device-detect'
+
 export default function Terminal({ text }: { text: string }) {
     return (
         <div className="Terminal" style={style.terminal}>
@@ -12,12 +14,12 @@ export default function Terminal({ text }: { text: string }) {
 
 const style = {
     terminal: {
-        width: '50%',
+        width: isMobile ? '90%' : '50%',
         margin: 'auto',
         backgroundColor: 'rgb(20, 20, 20)',
-        height: '30vh',
+        height: isMobile ? '60vh' : '30vh',
         borderRadius: 15,
-        border: '1px solid darkblue',
+        paddingBottom: 20,
         fontFamily: 'consolas',
         boxShadow: '0px 0px 10px 10px black'
     }
