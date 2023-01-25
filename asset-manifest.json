@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/cv-site/static/css/main.eb17c28a.chunk.css",
-    "main.js": "/cv-site/static/js/main.8e8f9a31.chunk.js",
-    "main.js.map": "/cv-site/static/js/main.8e8f9a31.chunk.js.map",
-    "runtime-main.js": "/cv-site/static/js/runtime-main.01e5f293.js",
-    "runtime-main.js.map": "/cv-site/static/js/runtime-main.01e5f293.js.map",
-    "static/js/2.c2e8a603.chunk.js": "/cv-site/static/js/2.c2e8a603.chunk.js",
-    "static/js/2.c2e8a603.chunk.js.map": "/cv-site/static/js/2.c2e8a603.chunk.js.map",
-    "static/js/3.1770582f.chunk.js": "/cv-site/static/js/3.1770582f.chunk.js",
-    "static/js/3.1770582f.chunk.js.map": "/cv-site/static/js/3.1770582f.chunk.js.map",
+    "main.js": "/cv-site/static/js/main.8a39f28f.chunk.js",
+    "main.js.map": "/cv-site/static/js/main.8a39f28f.chunk.js.map",
+    "runtime-main.js": "/cv-site/static/js/runtime-main.0569db7a.js",
+    "runtime-main.js.map": "/cv-site/static/js/runtime-main.0569db7a.js.map",
+    "static/js/2.c6cd10bf.chunk.js": "/cv-site/static/js/2.c6cd10bf.chunk.js",
+    "static/js/2.c6cd10bf.chunk.js.map": "/cv-site/static/js/2.c6cd10bf.chunk.js.map",
     "index.html": "/cv-site/index.html",
     "static/css/main.eb17c28a.chunk.css.map": "/cv-site/static/css/main.eb17c28a.chunk.css.map",
-    "static/js/2.c2e8a603.chunk.js.LICENSE.txt": "/cv-site/static/js/2.c2e8a603.chunk.js.LICENSE.txt",
-    "static/media/andrey.larionov.me.a0b8c356.jpg": "/cv-site/static/media/andrey.larionov.me.a0b8c356.jpg",
+    "static/js/2.c6cd10bf.chunk.js.LICENSE.txt": "/cv-site/static/js/2.c6cd10bf.chunk.js.LICENSE.txt",
+    "static/media/andrey.larionov.me.afa5185e.jpg": "/cv-site/static/media/andrey.larionov.me.afa5185e.jpg",
     "static/media/bootstrap.3ecbddaa.svg": "/cv-site/static/media/bootstrap.3ecbddaa.svg",
     "static/media/circleci_48px.bb4cbdc0.svg": "/cv-site/static/media/circleci_48px.bb4cbdc0.svg",
     "static/media/css3_48px.949d72f1.svg": "/cv-site/static/media/css3_48px.949d72f1.svg",
+    "static/media/dnuvs.0760b1cb.png": "/cv-site/static/media/dnuvs.0760b1cb.png",
     "static/media/docker_48px.58f66d4c.svg": "/cv-site/static/media/docker_48px.58f66d4c.svg",
     "static/media/english.f65af1d9.svg": "/cv-site/static/media/english.f65af1d9.svg",
     "static/media/express.f18849ca.svg": "/cv-site/static/media/express.f18849ca.svg",
@@ -33,9 +32,11 @@
     "static/media/jira_48px.93bd6200.svg": "/cv-site/static/media/jira_48px.93bd6200.svg",
     "static/media/kknau.04772cf8.png": "/cv-site/static/media/kknau.04772cf8.png",
     "static/media/material-ui.5b2d8a0a.png": "/cv-site/static/media/material-ui.5b2d8a0a.png",
+    "static/media/microsoft_azure.51d3fea3.svg": "/cv-site/static/media/microsoft_azure.51d3fea3.svg",
     "static/media/mongodb_48px.4c27ef70.svg": "/cv-site/static/media/mongodb_48px.4c27ef70.svg",
     "static/media/mysql_logo_48px.b8f94ea1.svg": "/cv-site/static/media/mysql_logo_48px.b8f94ea1.svg",
     "static/media/nodejs_48px.7272e7ab.svg": "/cv-site/static/media/nodejs_48px.7272e7ab.svg",
+    "static/media/postgres.29aef667.svg": "/cv-site/static/media/postgres.29aef667.svg",
     "static/media/react_48px.64b64b80.svg": "/cv-site/static/media/react_48px.64b64b80.svg",
     "static/media/redis_48px.af7929a3.svg": "/cv-site/static/media/redis_48px.af7929a3.svg",
     "static/media/redux_48px.747ac9c6.svg": "/cv-site/static/media/redux_48px.747ac9c6.svg",
@@ -49,9 +50,9 @@
     "static/media/vuex.15c57e49.png": "/cv-site/static/media/vuex.15c57e49.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.01e5f293.js",
-    "static/js/2.c2e8a603.chunk.js",
+    "static/js/runtime-main.0569db7a.js",
+    "static/js/2.c6cd10bf.chunk.js",
     "static/css/main.eb17c28a.chunk.css",
-    "static/js/main.8e8f9a31.chunk.js"
+    "static/js/main.8a39f28f.chunk.js"
   ]
 }
