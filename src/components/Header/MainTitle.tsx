@@ -9,14 +9,13 @@ export default function MainTitle() {
     const { t } = useTranslation()
 
     const [typedStyleColor, setTypedStyleColor] = useState('orange')
-    const [jsStyleBackground, setJsStyleBackground] = useState('transparent')
+    const [jsStyleBackground, setJsStyleBackground] = useState('yellow')
     const [emodzyOpacity, setEmodzyOpacity] = useState(0)
 
     const stringTypedHandler = (arrayPos: number) => {
         switch (arrayPos) {
             case 0:
                 setTimeout(() => {
-                    setJsStyleBackground('yellow')
                     setTypedStyleColor('lightblue')
                 }, 500)
                 break
@@ -28,7 +27,6 @@ export default function MainTitle() {
                 break
             case 2:
                 setTimeout(() => {
-                    setJsStyleBackground('transparent')
                     setTypedStyleColor('orange')
                     setEmodzyOpacity(0)
                 }, 500)
@@ -39,7 +37,7 @@ export default function MainTitle() {
         <span>
             <h1 className="PositionTitle" style={style.positionTitle}>
                 <Typed
-                    className="DynamicString"
+                    //className="DynamicString"
                     style={{
                         color: typedStyleColor,
                         ...style.dynamicString

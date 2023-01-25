@@ -7,6 +7,8 @@ import { useTranslation } from 'react-i18next'
 import digitalWingIcon from '../../assets/icons/jobPlaces/DigitalWing.png'
 import pentaHouseIcon from '../../assets/icons/jobPlaces/PentaHouse.png'
 import kknauIcon from '../../assets/icons/jobPlaces/kknau.png'
+import tringIcon from '../../assets/icons/jobPlaces/Tring.jpg'
+import dnuvsIcon from '../../assets/icons/jobPlaces/dnuvs.png'
 
 import JobPlace from './JobPlace'
 import Subtitle from '../Subtitle'
@@ -63,11 +65,52 @@ export default function JobPlaces() {
             position: 'Web Developer',
             format: 'fullTime',
             stack: {
-                icons: ['javascript', 'html', 'css', 'nodejs', 'express', 'mysql'],
-                text: 'JS, HTML, CSS, Node.js+Express, MySQL, SSR, MVC'
+                icons: [
+                    'typescript',
+                    'javascript',
+                    'html',
+                    'css',
+                    'react',
+                    'redux',
+                    'nodejs',
+                    'express',
+                    'postgres',
+                    'mysql',
+                    'google',
+                    'google-drive-api',
+                    'jest',
+                    'docker'
+                ],
+                text: 'TS, JS, HTML, CSS, React, Redux,d Node.js+Express, Postgres, MySQL, Google OAuth2.0, Google Drive API, Jest, Docker'
             },
             description: 'jobPlace3Description',
             term: 'jobPlace3Term'
+        },
+        {
+            key: 'jobPlace4',
+            icon: tringIcon,
+            company: 'Tring',
+            position: 'Backend Node.js Developer',
+            format: 'partTime',
+            stack: {
+                icons: ['javascript', 'nodejs', 'express', 'postgres', 'jest', 'microsoft-azure', 'docker'],
+                text: 'JS, Node.js+Express, Postgres, Redis, Jest, Microsoft Azure, Docker'
+            },
+            description: 'jobPlace4Description',
+            term: 'jobPlace4Term'
+        },
+        {
+            key: 'jobPlace5',
+            icon: dnuvsIcon,
+            company: 'ДОН ДУВС',
+            position: 'Web Developer',
+            format: 'project',
+            stack: {
+                icons: ['typescript', 'html', 'css', 'react', 'redux', 'postgres', 'redis', 'jest', 'docker'],
+                text: 'TypeScript, HTML, CSS, React, Redux, Postgres, Redis, Jest, Docker'
+            },
+            description: 'jobPlace5Description',
+            term: 'jobPlace5Term'
         }
     ])
 

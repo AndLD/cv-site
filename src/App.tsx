@@ -88,10 +88,6 @@ function App() {
 
                 <Hardskills />
 
-                <Fade triggerOnce={true} fraction={isMobile ? 0.3 : 0.6} duration={1500}>
-                    <Terminal text={t('Terminal2')} />
-                </Fade>
-
                 <JobPlaces />
 
                 <Fade triggerOnce={true} fraction={isMobile ? 0.3 : 0.6} duration={1500}>

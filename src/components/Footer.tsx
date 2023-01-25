@@ -10,7 +10,7 @@ export default function Footer() {
                 textAlign: 'center'
             }}
         >
-            © 2021 . {t('Author')} .
+            © 2023 . {t('Author')} .
         </div>
     )
 }

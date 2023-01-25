@@ -13,6 +13,7 @@ import expressIcon from '../assets/icons/express.svg'
 
 import dockerIcon from '../assets/icons/docker_48px.svg'
 
+import postgresIcon from '../assets/icons/postgres.svg'
 import mysqlIcon from '../assets/icons/mysql_logo_48px.svg'
 import mongodbIcon from '../assets/icons/mongodb_48px.svg'
 import redisIcon from '../assets/icons/redis_48px.svg'
@@ -28,6 +29,7 @@ import googleIcon from '../assets/icons/google/google_48px.svg'
 import googleDocApiIcon from '../assets/icons/google/google_docs_48px.svg'
 import googleDriveApiIcon from '../assets/icons/google/google_drive_48px.svg'
 import googleAppsScriptIcon from '../assets/icons/google/google-apps-script.svg'
+import microsoftAzureIcon from '../assets/icons/microsoft_azure.svg'
 
 // teches used in past
 import golangIcon from '../assets/icons/golang.svg'
@@ -93,6 +95,9 @@ export default function Icon({
                 setSrc(dockerIcon)
                 break
 
+            case 'postgres':
+                setSrc(postgresIcon)
+                break
             case 'mysql':
                 setSrc(mysqlIcon)
                 break
@@ -154,6 +159,10 @@ export default function Icon({
 
             case 'bootstrap':
                 setSrc(bootstrapIcon)
+                break
+
+            case 'microsoft-azure':
+                setSrc(microsoftAzureIcon)
                 break
 
             // other

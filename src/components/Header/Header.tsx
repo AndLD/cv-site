@@ -8,7 +8,7 @@ import MainTitle from './MainTitle'
 
 export default function Header() {
     return (
-        <div style={style.header} className="Header">
+        <div style={style.header}>
             {!isMobile ? (
                 <Grid container direction="row" alignItems="center" justifyContent="space-between">
                     <MainTitle />
@@ -19,7 +19,7 @@ export default function Header() {
                 <div>
                     <MainTitle />
                     <Fade triggerOnce={true} fraction={0.6} duration={1500}>
-                        <div className="AvatarWrapper" style={style.avatarWrapper as any}>
+                        <div className="AvatarWrapper" style={style.avatarWrapper}>
                             <Avatar avatar={avatar} />
                         </div>
                     </Fade>
@@ -37,7 +37,7 @@ const style = {
         marginBottom: '30vh'
     },
     avatarWrapper: {
-        textAlign: isMobile ? 'center' : undefined,
+        textAlign: isMobile ? 'center' : 'left',
         marginTop: isMobile ? 50 : 0
-    }
+    } as React.CSSProperties
 }
