@@ -11,7 +11,6 @@ export default function Hardskills() {
     return (
         <Fade triggerOnce={true} fraction={isMobile ? 0.3 : 0.6} duration={1500}>
             <Subtitle text={t('TechesStack')} />
-            {/* // TODO: Refactoring */}
             <Hardskill
                 key={'hardskill1'}
                 text={'JavaScript, HTML, CSS'}
